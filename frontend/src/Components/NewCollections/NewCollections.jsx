@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react'
 import './NewCollections.css'
 import Item from '../Item/Item'
+import new_collection from '../Assets/new_collections'
 
 const NewCollections = () => {
-  const [new_collection, setNew_Collection] =useState([])
-  useEffect(()=>{
-    fetch('http://localhost:4000/newcollections')
-    .then((response)=>response.json())
-    .then((data)=>setNew_Collection(data))
-  },[])
+
+  // const [new_collection, setNew_Collection] =useState([])
+  // useEffect(()=>{
+  //   fetch('https://ecom123.onrender.com/newcollections')
+  //   .then((response)=>response.json())
+  //   .then((data)=>setNew_Collection(data))
+  // },[])
+  
   return (
     <div className='new-collections'>
         <h1>NEW COLLECTIONS</h1>
